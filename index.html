@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kod & Matte</title>
+    <style>
+        body {
+            background-color: black;
+            color: white;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+        }
+        h1 {
+            text-align: center;
+        }
+        .intro {
+            margin-bottom: 30px;
+            text-align: center;
+        }
+        .container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .row {
+            display: flex;
+            justify-content: center;
+            margin-top: 10px;
+            width: 100%;
+            flex-wrap: wrap; /* Allow wrapping */
+        }
+        .column {
+            background-color: rgba(0, 0, 0, 0.5);
+            border: 2px solid blue;
+            border-radius: 15px;
+            padding: 20px;
+            margin: 10px;
+            flex: 1 1 200px; /* Responsive column sizing */
+            max-width: 300px; /* Limit maximum width */
+            text-align: center;
+            text-decoration: none; /* Remove underline */
+        }
+        .column a {
+            color: white;
+            text-decoration: none;
+            display: block; /* Make the entire column clickable */
+            height: 100%;
+        }
+        @media (max-width: 600px) {
+            .column {
+                flex: 1 1 100%; /* Full width on small screens */
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Kod & Matte</h1>
+    <div class="intro">
+        <p>Kodning och matematik är djupt sammankopplade. 
+        Matematik och programmering är nära relaterade. Matematik tränar ditt logiska och analytiska tänkande, vilket är avgörande för problemlösning. Många algoritmer inom programmering bygger på matematiska koncept, och kunskap om statistik och sannolikhet är viktig för dataanalys och maskininlärning. Dessutom är grafteori relevant för nätverksanalys och sökalgoritmer. Sammanfattningsvis ger matematik dig verktyg för att tänka kritiskt och lösa problem effektivt inom programmering.</p>
+    </div>
+
+    <div class="container">
+        <div class="row">
+            <div class="column">
+                <a href="Förklaring.html">
+                <h2>Förklaringar</h2>
+                <p>Här får du alla förklaringar kring de olika ämnena i matematik. Vi täcker grundläggande koncept.</p>
+                </a>
+            </div>
+        </div>
+        <div class="row">
+            <div class="column">
+                <a href="potenser.html">
+                    <h2>Potenser</h2>
+                    <p>Övningar- räkna med potenser</p>
+                </a>
+            </div>
+            <div class="column">
+                <a href="Sannol.html">
+                    <h2>Sannolikhet</h2>
+                    <p>Övningar- träna mer på sannolikhet</p>
+                </a>
+            </div>
+            <div class="column">
+                <a href="Funktioner.html">
+                    <h2>Funktioner</h2>
+                    <p>Övningar- träna mer på funktioner</p>
+                </a>
+            </div>
+            <div class="column">
+                <a href="statistik.html">
+                    <h2>Statistik</h2>
+                    <p>Övningar- träna mer på statistik</p>
+                </a>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
